@@ -1,5 +1,7 @@
 {
   "name": "data-list-ionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

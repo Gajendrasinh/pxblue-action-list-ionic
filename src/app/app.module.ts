@@ -10,7 +10,7 @@ import { LayoutModule } from "@angular/cdk/layout";
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { EmptyStateComponent } from './components/empty-state.component';
-import { MatIconModule } from "@angular/material/icon";
+import { MatIconModule,  MatButtonModule} from "@angular/material/icon";
 
 import {
   MatToolbarModule, MatListModule
