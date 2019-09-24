@@ -27,9 +27,8 @@
       <div style="height: 100%" *ngIf="data.length == 0">
           <empty-state title="No Items found">
         
-          <button mat-raised-button color="primary" action>
-            <mat-icon>add_circle</mat-icon>
-            Add An Item
+          <button mat-raised-button color="primary" action (click)="onAddItem()">
+            <mat-icon>add</mat-icon> Add An Item
           </button>
           
         </empty-state>
