@@ -37,7 +37,64 @@ ion-header, ion-toolbar {
     color: map-get($pxb-white, 50);
     --color : map-get($pxb-white, 50);
     --background: map-get($pxb-blue, 500); 
-    background: map-get($pxb-blue, 500);    
+    background: map-get($pxb-blue, 500); 
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;   
+}
+
+.action-sheet-group.sc-ion-action-sheet-ios {
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 
+.action-sheet-button.sc-ion-action-sheet-ios {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  height: 52px;
+  background: transparent;
+  color: var(--color,var(--ion-color-step-850,#262626));
+  font-size: 16px;
+  text-align: start;
+  contain: strict;
+  overflow: hidden;
+}
+.action-sheet-button-inner.sc-ion-action-sheet-ios {
+ 
+  align-items: left;
+  justify-content: left;
+}
+.action-sheet-button.sc-ion-action-sheet-ios .action-sheet-icon.sc-ion-action-sheet-ios {
+  -webkit-margin-end: 32px;
+  margin-inline-end: 32px;
+}
+
+.action-sheet-cancel.sc-ion-action-sheet-ios {
+  font-weight: 400;
+}
+
+.action-sheet-icon.sc-ion-action-sheet-ios {
+  padding-bottom: 4px;
+  margin-left: 0;
+  margin-right: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color,rgba(var(--ion-text-color-rgb,0,0,0),.54));
+  font-size: 24px;
+}
+
+.action-sheet-group.sc-ion-action-sheet-ios:last-child {
+  margin-bottom: 0;
+}
+.action-sheet-container.sc-ion-action-sheet-ios {
+  padding-left: unset;
+  padding-right: unset;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
+}

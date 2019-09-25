@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, DebugElement  } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 
 import { Platform } from '@ionic/angular';
@@ -10,6 +10,12 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
 
   let statusBarSpy, splashScreenSpy, platformReadySpy, platformSpy;
+
+
+  let addItem: DebugElement;
+  let deleteItem: DebugElement;
+  let menu: DebugElement;
+
 
   beforeEach(async(() => {
     statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
@@ -40,6 +46,23 @@ describe('AppComponent', () => {
     await platformReadySpy;
     expect(statusBarSpy.styleDefault).toHaveBeenCalled();
     expect(splashScreenSpy.hide).toHaveBeenCalled();
+  });
+
+  it('Adding an item works  by clicking add icon', async () => {
+    console.log("onAddItem function ")
+    //addItem.triggerEventHandler('click', null);
+  });
+
+  it('Deleting an item works by clicking remove icon from action', async () => {
+    console.log("onRemoveItem function ")
+  });
+
+  it('Deleting all works by clicking delete icon', async () => {
+    console.log("onRemoveAll function ")
+  });
+
+  it('Menu shows when clicking the menu button', async () => {
+    console.log("Click on right side menu open action menu ")
   });
 
   // TODO: add more tests!
