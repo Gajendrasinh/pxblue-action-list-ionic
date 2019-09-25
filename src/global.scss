@@ -83,7 +83,8 @@ ion-header, ion-toolbar {
   margin-right: 32px;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--color,rgba(var(--ion-text-color-rgb,0,0,0),.54));
+  color: map-get($pxb-black, 500);
+  --color : map-get($pxb-black, 500);
   font-size: 24px;
 }
 
